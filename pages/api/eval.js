@@ -12,7 +12,7 @@ export default async (req, res) => {
     attachments = [{ text: error.stack }];
   }
 
-  const message = '`' + req.body.text + '`: ' + result;
+  const message = '`' + req.body.text + '` ```' + result + '```';
   const response_type = 'in_channel';
 
   res.setHeader('Content-Type', 'application/json');
