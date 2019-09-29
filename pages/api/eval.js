@@ -1,5 +1,3 @@
-import { text } from 'micro';
-import { parse } from 'querystring';
 import evaluateIncomingJS from '../../lib/eval';
 
 export default async (req, res) => {
