@@ -5,7 +5,7 @@ export default async (req, res) => {
 
   if (!req.body.text) {
     res.setHeader('Content-Type', 'application/json');
-    return res.json({ response_type, text: 'Error: Missing source code to evaluate' });
+    return res.json({ response_type, text: '```Error: Missing source code to evaluate```' });
   }
 
   let result, attachments;
